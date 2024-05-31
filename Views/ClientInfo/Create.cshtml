@@ -1,0 +1,30 @@
+<div>This is Create. OMG</div>
+
+<a href="@Url.Action("Index")">Cancel</a>
+
+
+<h1>Create</h1>
+<link rel="stylesheet" href="~/MalinaoLoans.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/design.css" asp-append-version="true" />
+
+@using (Html.BeginForm("Create","ClientInfo",FormMethod.Post)){
+    <div>
+
+        <label for="Name">User Type </label>
+        <select type="UserType" name="UserType" id = "UserType" />
+        <option value="">Admin</option>
+          <option value="">Slave</option>
+
+        <label for="Name"> Last Name </label>
+        <input type="LastName" name="LastName" id = "LastName" />
+
+         <label for="Name"> Last Name </label>
+        <input type="FirstName" name="FirstName" id = "FirstName" />
+
+         <label for="Name"> Address </label>
+        <input type="Address" name="Address" id = "Address" />
+    </div>
+    
+    <button type = "submit">Submit</button>
+
+}

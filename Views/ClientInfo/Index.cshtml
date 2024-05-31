@@ -1,0 +1,55 @@
+
+<link rel="stylesheet" href="~/MalinaoLoans.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/design.css" asp-append-version="true" />
+
+@model List<MalinaoLoans.Entites.ClientInfo>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+
+    
+
+<div>
+
+
+    <h1>Hello World</h1>
+<a href="@Url.Action("Create")">Go to Create</a>
+    <p>This is my Web Page</p>
+    <button>Press me</button>
+
+
+    <table>
+
+        <thead>
+            <th>Id</th>
+  
+   
+            <th>USER TYPE</th>
+            <th>NAME</th>
+            <th>ADRESS</th>
+            <th>AGE</th>
+           
+        </thead>
+
+        <tbody>
+            @foreach(var clientInfo in Model){
+                <tr>
+                    <td>@clientInfo.Id</td>
+                    <td>@clientInfo.UserType</td>
+                    <td>@(clientInfo.FirstName + " " + clientInfo.LastName)</td>
+                    <td>@clientInfo.Address</td>
+                    <td>@clientInfo.Age</td>
+                    <td><a href="/ClientInfo/Update/@clientInfo.Id">Update</a></td>
+                    <td><a href="/ClientInfo/Delete/@clientInfo.Id">Delete</a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    
+    
+
+</div>
+
+
