@@ -1,0 +1,44 @@
+@model List<MalinaoLoans.Entites.Loan>
+<div>
+    <h1>Loans</h1>
+
+    <a href="/clientinfo/index">Home</a>
+    <td><a href="">Add new Loan</a></td>
+    <table>
+
+        <thead>
+            <th>ID</th>
+            <th>Borrower</th>
+            <th>Amount</th>
+            <th>Term</th>
+            <th>Payment</th>
+            <th>Payment Amount</th>
+            <th>Interest Amount</th>
+            <th>Status</th>
+        </thead>
+
+        <tbody>
+
+            @foreach (var Loans in Model)
+            {
+                <tr>
+                    <td>@Loans.Id</td>
+                    <td>@Loans.Borrower</td>
+                    <td>@Loans.Amount</td>
+                    <td>@Loans.Term</td>
+                    <td>@Loans.Payment</td>
+                    <td>@Loans.PaymentAmount</td>
+                    <td>@Loans.InterestAmount</td>
+                    <td>@Loans.Status</td>
+
+                    <td><a href="">Update</a></td>
+                    <td><a href="">Delete</a></td>
+                </tr>
+            }
+        </tbody>
+
+
+    </table>
+
+
+</div>

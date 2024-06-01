@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "7VwbK5zLiL/KtHZdna9MBGUm8t3fPW1tFW8lfBUceeI=",
+  "Hash": "RAmVRt42louw+IhlXbWMqvqB8hkjHVf1K5EaSHi6XOI=",
   "Source": "MalinaoLoans",
   "BasePath": "_content/MalinaoLoans",
   "Mode": "Default",
@@ -100,6 +100,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\FOR CLONE\\Desktop\\MalinaoLoans\\wwwroot\\images\\blue.jpg",
+      "SourceId": "MalinaoLoans",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\FOR CLONE\\Desktop\\MalinaoLoans\\wwwroot\\",
+      "BasePath": "_content/MalinaoLoans",
+      "RelativePath": "images/blue.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\blue.jpg"
     },
     {
       "Identity": "C:\\Users\\FOR CLONE\\Desktop\\MalinaoLoans\\wwwroot\\images\\leaf.jpg",

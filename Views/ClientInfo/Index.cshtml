@@ -12,6 +12,8 @@
 
     <h1>Hello World</h1>
 <a href="@Url.Action("Create")">Go to Create</a>
+<a href="/loan/index">Loans</a>
+
     <p>This is my Web Page</p>
     <button>Press me</button>
 
@@ -22,7 +24,7 @@
             <th>Id</th>
   
    
-            <th>USER TYPE</th>
+            
             <th>NAME</th>
             <th>ADRESS</th>
             <th>AGE</th>
@@ -33,7 +35,7 @@
             @foreach(var clientInfo in Model){
                 <tr>
                     <td>@clientInfo.Id</td>
-                    <td>@clientInfo.UserType</td>
+                
                     <td>@(clientInfo.FirstName + " " + clientInfo.LastName)</td>
                     <td>@clientInfo.Address</td>
                     <td>@clientInfo.Age</td>

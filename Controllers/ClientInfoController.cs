@@ -12,7 +12,7 @@ namespace MalinaoLoans.Controllers
 //All of these are required to access the database
     public class ClientInfoController : Controller   //at first it was logger, then nigger, but context
     {
-        private readonly CsharpUtangDatabaseContext _context;
+        private readonly CsharpUtangDatabaseContext _context;  // change these greens to context
 
         public ClientInfoController(CsharpUtangDatabaseContext context)
         {
