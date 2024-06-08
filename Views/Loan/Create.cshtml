@@ -1,0 +1,71 @@
+<div>This is Create. OMG</div>
+
+<a href="@Url.Action("Index")">Cancel</a>
+
+
+<h1>Create New Loan</h1>
+<link rel="stylesheet" href="~/MalinaoLoans.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/design.css" asp-append-version="true" />
+
+@using (Html.BeginForm("Create","Loan",FormMethod.Post)){
+    <div>
+
+        <label for="Name">User Type </label>
+        <select type="UserType" name="UserType" id = "UserType" />
+        <option value="">Admin</option>
+          <option value="">Slave</option>
+
+        <label for="Name"> Amount </label>
+        <input type="Amount" name="Amount" id = "Amount" /> <br>
+
+         <label for="Name"> Term </label>
+        <input type="Term" name="Term" id = "Term" /> <br>
+
+         <label for="Name"> PaymentAmount </label>
+        <input type="PaymentAmount" name="PaymentAmount" id = "PaymentAmount" /> <br>
+
+         <label for="Name"> Term </label>
+        <input type="Term" name="Term" id = "Term" /> <br>
+
+         <label for="Name"> InterestAmount </label>
+        <input type="InterestAmount" name="InterestAmount" id = "InterestAmount" /> <br>
+
+         <label for="Name"> Term </label>
+        <input type="Term" name="Term" id = "Term" /> <br>
+
+         <label for="Name"> TotalAmount </label>
+        <input type="TotalAmount" name="TotalAmount" id = "TotalAmount" /> <br>
+
+         <label for="Name"> Interest </label>
+        <input type="Interest" name="Interest" id = "Interest" /> <br>
+
+         <label for="Name"> Deduction </label>
+        <input type="Deduction" name="Deduction" id = "Deduction" /> <br>
+
+         <label for="Name"> RecievableAmount </label>
+        <input type="RecievableAmount" name="RecievableAmount" id = "RecievableAmount" /> <br>
+
+         <label for="Name"> Status </label>
+        <input type="Status" name="Status" id = "Status" /> <br>
+
+        
+         <label for="Name"> RecievableAmount </label>
+        <input type="RecievableAmount" name="RecievableAmount" id = "RecievableAmount" /> <br>
+
+         <label for="Name"> Status </label>
+        <input type="Status" name="Status" id = "Status" /> <br>
+
+        
+         <label for="Name"> RecievableAmount </label>
+        <input type="RecievableAmount" name="RecievableAmount" id = "RecievableAmount" /> <br>
+
+         <label for="Name"> Status </label>
+        <input type="Status" name="Status" id = "Status" /> <br>
+
+         <label for="Name"> DueDate </label>
+        <input type="DueDate" name="DueDate" id = "DueDate" /> <br>
+    </div>
+    
+    <button type = "submit">Submit</button>
+
+}

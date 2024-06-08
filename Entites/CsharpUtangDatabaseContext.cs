@@ -77,7 +77,10 @@ public partial class CsharpUtangDatabaseContext : DbContext
                 .HasColumnName("dueDate");
             entity.Property(e => e.Interest).HasColumnName("interest");
             entity.Property(e => e.InterestAmount).HasColumnName("interestAmount");
-            entity.Property(e => e.Payment).HasColumnName("payment");
+            entity.Property(e => e.Payment)
+                .HasMaxLength(255)
+                .IsUnicode(false)
+                .HasColumnName("payment");
             entity.Property(e => e.PaymentAmount).HasColumnName("paymentAmount");
             entity.Property(e => e.RecievableAmount).HasColumnName("recievableAmount");
             entity.Property(e => e.Status)

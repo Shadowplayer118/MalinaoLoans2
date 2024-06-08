@@ -28,8 +28,31 @@ namespace MalinaoLoans.Controllers
              [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
+
             return View("Error!");
+
         }
+
+          [HttpGet]
+        public IActionResult Create(){
+            return View();
+        }
+
+
+         [HttpPost]
+
+        public IActionResult Create( Loan loan){
+            _context.Loans.Add(loan);
+            _context.SaveChanges();
+
+            return RedirectToAction("Index");
+
+        }
+
+
+     
+
+
 
       
     }

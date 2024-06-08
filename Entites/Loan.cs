@@ -13,8 +13,6 @@ public partial class Loan
 
     public int? Term { get; set; }
 
-    public double? Payment { get; set; }
-
     public double? PaymentAmount { get; set; }
 
     public double? InterestAmount { get; set; }
@@ -32,4 +30,6 @@ public partial class Loan
     public DateTime? DueDate { get; set; }
 
     public DateTime? DateCreated { get; set; }
+
+    public string? Payment { get; set; }
 }
